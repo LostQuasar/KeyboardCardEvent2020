@@ -9,4 +9,4 @@ Create a subfolder in the root of this repository, in that folder place:
   - `card name`.sch
 - `card name`.zip (a zip of the Gerber files)
 - readme.md containing info from the [template](/template/readme.md)
-- an edited version of license containing your name or username
+- an edited version of `LICENSE` containing your name or username

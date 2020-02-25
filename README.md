@@ -1,7 +1,7 @@
 # KeyboardCardEvent2020
 How to sumbit your card!
 
-First you will want to fork this repository. Then you will want to reate a subfolder in the submission folder of this repository. 
+First you will want to fork this repository. Then you will want to create a subfolder in the submission folder of this repository. 
 
 In that folder upload:
 - 1 or more pictures of your completed build

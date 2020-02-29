@@ -1,4 +1,4 @@
-# KeyboardCardEvent2020
+# Keyboard Business Card Event 2020
 How to sumbit your card!
 
 First you will want to fork this repository. Then you will want to create a subfolder with your username in the submission folder of this repository. 

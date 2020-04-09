@@ -6,7 +6,7 @@ Front
 Back
 ![image of card](orthocard2.jpg)
 
-#Summary
+# Summary
 
 OrthoCard is a mini Planck like busines card 2x4 keyboard. The keyboard uses an Atmega32u4 as an MCU.
 Up to 6 of these OrthoCards can be linked together to form up to a 12x4 Keyboard. The bottom two keys
@@ -17,7 +17,7 @@ diodes to function.
 When creating a keyboard out of multiple cards it is best to have a plate of the full size of the
 board. This will add to the overall stability of the whole assembly.
 
-#Parts list
+# Parts list
 
 Only the left most board
 - 1 x Atmega32U4-AU (U1)

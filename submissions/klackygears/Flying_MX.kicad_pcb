@@ -417,7 +417,7 @@
   )
 
   (module KiCadImages:FlyingMX_smallsilk (layer B.Cu) (tedit 0) (tstamp 5E925FDD)
-    (at 97.2 64.4 180)
+    (at 93.4 61.3 180)
     (fp_text reference G*** (at 0 0) (layer B.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
     )
@@ -4770,7 +4770,7 @@
   )
 
   (module KiCadImages:FlyingMX_smallsilk (layer B.Cu) (tedit 0) (tstamp 5E925FAA)
-    (at 83.2 69.1 180)
+    (at 86.4 74.2 180)
     (fp_text reference G*** (at 0 0) (layer B.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
     )

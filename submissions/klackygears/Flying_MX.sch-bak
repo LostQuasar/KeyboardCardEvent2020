@@ -793,11 +793,11 @@ Wire Wire Line
 	6800 5200 7250 5200
 Wire Wire Line
 	7850 5200 8300 5200
-Text GLabel 3950 2300 2    50   Input ~ 0
-COL0
 Text GLabel 3950 2400 2    50   Input ~ 0
-COL1
+COL0
 Text GLabel 3950 2500 2    50   Input ~ 0
+COL1
+Text GLabel 3950 2300 2    50   Input ~ 0
 COL2
 Text GLabel 3950 3800 2    50   Input ~ 0
 ROW0

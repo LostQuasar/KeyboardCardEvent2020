@@ -210,7 +210,7 @@
   )
 
   (module KiCadImages:GearLogo_smallsolder (layer F.Cu) (tedit 0) (tstamp 5E9C3636)
-    (at 115 41.6)
+    (at 115.5 42.5)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )

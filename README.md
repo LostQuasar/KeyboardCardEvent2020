@@ -17,3 +17,4 @@ In that folder upload:
 - `card name`.zip (a zip of the Gerber files)
 - readme.md containing info from the [template](/template/readme.md)
 - an edited version of `LICENSE` containing your name or username
+- please host images on imgur instead of putting them in the repo

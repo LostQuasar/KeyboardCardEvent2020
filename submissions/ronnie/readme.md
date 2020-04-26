@@ -1,6 +1,6 @@
 # Ronnie's OrthoCard Business card
 
-![image of card](orthocard1.jpg)
+![Imgur](https://i.imgur.com/f4C8SDl.jpg)
 
 # Summary
 
@@ -18,15 +18,15 @@ columns are wired. It would be possible to make a reversible version of the boar
 where you could flip the boards and have the USB and MCU on the right, but i leave that as an
 exercise for the reader. 
 
-![image of card](orthocard-12x4.jpg)
+![Imgur](https://imgur.com/0YB4CI3.jpg)
 
 When creating a keyboard out of multiple cards it is best to have a plate of the full size of the
 board. This will add to the overall stability of the whole assembly.
 
 # PCB
 
-![image of card](orthocard-top.jpg)
-![image of card](orthocard-bottom.jpg)
+![Imgur](https://imgur.com/RSAwaaz.jpg)
+![Imgur](https://imgur.com/LXBFsvm.jpg)
 
 # Parts list
 

@@ -1,0 +1,44 @@
+{
+    "pins": {
+        "1": {
+            "layout": {
+                "pad": "pin",
+                "location": [
+                    0,
+                    -1.27
+                ],
+                "rotate": 0,
+                "label": "1"
+            }
+        },
+        "2": {
+            "layout": {
+                "pad": "pin",
+                "location": [
+                    0,
+                    1.27
+                ],
+                "label": "2"
+            }
+        }
+    },
+    "layout": {},
+    "pads": {
+        "pin": {
+            "shapes": [
+                {
+                    "layers": [
+                        "top"
+                    ],
+                    "type": "circle",
+                    "outline": 0,
+                    "diameter": 1.9,
+                    "offset": [
+                        0,
+                        0
+                    ]
+                }
+            ]
+        }
+    }
+}

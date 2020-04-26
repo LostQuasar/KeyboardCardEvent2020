@@ -1,0 +1,36 @@
+{
+"pins":
+  {
+  "VIA":
+    {	
+      "layout": 
+      {
+        "pad": "via_0.5", 
+        "location": [0, 0]
+      }
+    }
+  },
+  "pads":
+  {
+    "via_0.5":
+    {
+      "shapes":
+      [
+	{
+          "type": "circle",
+	  "layer": ["top", "bottom"],
+	  "style": "fill",
+          "diameter": 0.7,
+          "buffer-to-pour": 0.2, 
+          "soldermask": {}
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 0.35
+        }
+      ]
+    }
+  }
+}

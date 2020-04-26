@@ -1,0 +1,25 @@
+{
+    "layout": {
+        "silkscreen": {
+            "shapes": [
+                {
+                    "type": "text",
+                    "layers": [
+                        "top"
+                    ],
+                    "font-family": "Overlock-Regular-OTF-webfont",
+                    "font-size": "2.8mm",
+                    "letter-spacing": "0mm",
+                    "line-height": "2.8mm",
+                    "location": [
+                        0,
+                        0
+                    ],
+                    "rotate": 0,
+                    "style": "fill",
+                    "value": "Custom keyboard PCBs\nhttps://keypcb.xyz"
+                }
+            ]
+        }
+    }
+}

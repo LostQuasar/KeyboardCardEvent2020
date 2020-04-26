@@ -1,0 +1,71 @@
+{
+    "info": {
+        "description": "Piezo",
+        "manufacturer": "KELIKING",
+        "notes": ""
+    },
+    "pins": {
+        "1": {
+            "layout": {
+                "pad": "pad",
+                "location": [
+                    0,
+                    6.5
+                ]
+            }
+        },
+        "2": {
+            "layout": {
+                "pad": "pad",
+                "location": [
+                    0,
+                    -6.5
+                ]
+            }
+        }
+    },
+    "layout": {
+        "silkscreen": {
+            "shapes": [
+                {
+                    "type": "rect",
+                    "style": "stroke",
+                    "stroke-width": 0.35,
+                    "width": 9,
+                    "height": 11,
+                    "location": [
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        "assembly": {
+            "shapes": [
+                {
+                    "type": "rect",
+                    "width": 9,
+                    "height": 11,
+                    "location": [
+                        0,
+                        0
+                    ]
+                }
+            ]
+        }
+    },
+    "pads": {
+        "pad": {
+            "shapes": [
+                {
+                    "type": "rect",
+                    "width": 3,
+                    "height": 3,
+                    "layers": [
+                        "top"
+                    ]
+                }
+            ]
+        }
+    }
+}

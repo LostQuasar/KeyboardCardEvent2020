@@ -47,6 +47,11 @@ And per board
 - 7 or 8 MX switches (SW101 - SW403)
 - 8 Diodes SMD (D101 - D402)
 
+# Build Notes
+
+The USB connector is directly under two switches. You probably have to cut the four pins of the
+connector to be flush with the pcb so they don't get in the way of the two switches on top.
+
 # Inspiration
 
 I took inspiration for making this board from the following sources:

@@ -57,25 +57,8 @@ F 3 "" H 11000 750 50  0001 C CNN
 	1    11000 750 
 	1    0    0    -1  
 $EndComp
-$Comp
-L orthocard-rescue:ATmega32U4-AU-MCU_Microchip_ATmega-plancky-rescue U1
-U 1 1 5E80BF7B
-P 2425 2650
-F 0 "U1" H 2425 761 50  0000 C CNN
-F 1 "ATmega32U4-AU" H 2425 670 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 2425 2650 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 2425 2650 50  0001 C CNN
-	1    2425 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2525 850  2425 850 
-Connection ~ 2425 850 
 Wire Wire Line
 	2325 750  2325 850 
-Connection ~ 2325 850 
-Wire Wire Line
-	2325 850  2425 850 
 $Comp
 L power:GND #PWR0103
 U 1 1 5E816308
@@ -91,7 +74,6 @@ Wire Wire Line
 	2425 4450 2325 4450
 Wire Wire Line
 	2325 4550 2325 4450
-Connection ~ 2325 4450
 $Comp
 L Device:R_Small R4
 U 1 1 5E817251
@@ -997,11 +979,23 @@ F 3 "~" H 4525 4025 50  0001 C CNN
 	1    4525 4025
 	1    0    0    -1  
 $EndComp
+NoConn ~ 1300 5100
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
+U 1 1 5E80BF7B
+P 2425 2650
+F 0 "U1" H 2425 761 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 2425 670 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 2425 2650 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 2425 2650 50  0001 C CNN
+	1    2425 2650
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	1300 5100 1500 5100
+	2525 850  2425 850 
+Connection ~ 2325 850 
+Connection ~ 2425 850 
 Wire Wire Line
-	1500 5100 1500 5600
-Wire Wire Line
-	1500 5600 1400 5600
-Connection ~ 1400 5600
+	2425 850  2325 850 
+NoConn ~ 1825 1750
 $EndSCHEMATC

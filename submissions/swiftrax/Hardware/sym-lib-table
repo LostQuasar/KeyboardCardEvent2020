@@ -1,4 +1,3 @@
 (sym_lib_table
   (lib (name "usb-type-c")(type "Legacy")(uri "${KIPRJMOD}/Schematic Library/usb-type-c.lib")(options "")(descr ""))
-  (lib (name "keebio")(type "Legacy")(uri "${KIPRJMOD}/Schematic Library/keebio.lib")(options "")(descr ""))
 )

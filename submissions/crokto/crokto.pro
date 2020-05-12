@@ -1,4 +1,4 @@
-update=04/15/20 05:16:17
+update=5/11/2020 1:10:47 AM
 version=1
 last_client=kicad
 [general]
@@ -27,7 +27,7 @@ version=1
 PageLayoutDescrFile=
 LastNetListRead=crokto.net
 CopperLayerCount=2
-BoardThickness=1.6
+BoardThickness=0.6
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0

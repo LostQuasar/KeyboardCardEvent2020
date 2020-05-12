@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name crokto)(type KiCad)(uri ${KIPRJMOD}/libs/crokto.pretty)(options "")(descr ""))
+  (lib (name pcb-usb)(type KiCad)(uri ${KIPRJMOD}/libs/pcb-usb.pretty)(options "")(descr ""))
+  (lib (name switches-nocopper)(type KiCad)(uri ${KIPRJMOD}/libs/switches-nocopper.pretty)(options "")(descr ""))
+  (lib (name logo)(type KiCad)(uri ${KIPRJMOD}/libs/logo.pretty)(options "")(descr ""))
+)

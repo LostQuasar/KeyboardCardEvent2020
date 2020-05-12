@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:crokto-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -44,17 +45,6 @@ F 1 "GND" H 7605 5777 50  0000 C CNN
 F 2 "" H 7600 5950 50  0001 C CNN
 F 3 "" H 7600 5950 50  0001 C CNN
 	1    7600 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR013
-U 1 1 5E9926EF
-P 7300 5950
-F 0 "#PWR013" H 7300 5700 50  0001 C CNN
-F 1 "GND" H 7305 5777 50  0000 C CNN
-F 2 "" H 7300 5950 50  0001 C CNN
-F 3 "" H 7300 5950 50  0001 C CNN
-	1    7300 5950
 	1    0    0    -1  
 $EndComp
 Text Label 8200 3850 0    50   ~ 0
@@ -218,12 +208,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR05
 U 1 1 5E9AF71C
-P 1300 4800
-F 0 "#PWR05" H 1300 4550 50  0001 C CNN
-F 1 "GND" H 1300 4850 50  0000 C CNN
-F 2 "" H 1300 4800 50  0001 C CNN
-F 3 "" H 1300 4800 50  0001 C CNN
-	1    1300 4800
+P 1500 4800
+F 0 "#PWR05" H 1500 4550 50  0001 C CNN
+F 1 "GND" H 1500 4850 50  0000 C CNN
+F 2 "" H 1500 4800 50  0001 C CNN
+F 3 "" H 1500 4800 50  0001 C CNN
+	1    1500 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -251,19 +241,18 @@ F 3 "~" H 1750 4600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L keyboard_parts:SW_PUSH SW1
+L Switch:SW_Push SW1
 U 1 1 5E9ACAF8
-P 1600 4800
-F 0 "SW1" H 1600 4800 50  0000 C CNN
-F 1 "SW_PUSH" H 1600 4700 50  0000 C CNN
-F 2 "Connector_Wire:SolderWirePad_1x02_P3.81mm_Drill0.8mm" H 1600 4800 60  0001 C CNN
-F 3 "" H 1600 4800 60  0000 C CNN
-	1    1600 4800
+P 1700 4800
+F 0 "SW1" H 1700 4800 50  0000 C CNN
+F 1 "SW_PUSH" H 1700 4700 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P3.81mm_Drill0.8mm" H 1700 4800 60  0001 C CNN
+F 3 "" H 1700 4800 60  0000 C CNN
+	1    1700 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1950 4800 1900 4800
-Connection ~ 1900 4800
 $Comp
 L Power_Protection:PRTR5V0U2X D1
 U 1 1 5E9C3DB6
@@ -302,15 +291,15 @@ F 3 "" H 10050 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:PTC PTC1
+L Device:Polyfuse PTC1
 U 1 1 5E9C6871
-P 9950 3700
-F 0 "PTC1" H 9950 4015 50  0000 C CNN
-F 1 "PTC" H 9950 3924 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 9950 3700 60  0001 C CNN
-F 3 "" V 9950 3700 60  0000 C CNN
-	1    9950 3700
-	1    0    0    -1  
+P 9850 3700
+F 0 "PTC1" V 10050 3700 50  0000 C CNN
+F 1 "PTC" V 9950 3700 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 9850 3700 60  0001 C CNN
+F 3 "" V 9850 3700 60  0000 C CNN
+	1    9850 3700
+	0    1    1    0   
 $EndComp
 $Comp
 L power:VBUS #PWR017
@@ -326,23 +315,23 @@ $EndComp
 $Comp
 L power:VCC #PWR018
 U 1 1 5E9C7599
-P 10200 3700
-F 0 "#PWR018" H 10200 3550 50  0001 C CNN
-F 1 "VCC" H 10217 3873 50  0000 C CNN
-F 2 "" H 10200 3700 50  0001 C CNN
-F 3 "" H 10200 3700 50  0001 C CNN
-	1    10200 3700
+P 10000 3700
+F 0 "#PWR018" H 10000 3550 50  0001 C CNN
+F 1 "VCC" H 10017 3873 50  0000 C CNN
+F 2 "" H 10000 3700 50  0001 C CNN
+F 3 "" H 10000 3700 50  0001 C CNN
+	1    10000 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG03
 U 1 1 5E9C7DA1
-P 10200 3700
-F 0 "#FLG03" H 10200 3775 50  0001 C CNN
-F 1 "PWR_FLAG" V 10200 3828 50  0000 L CNN
-F 2 "" H 10200 3700 50  0001 C CNN
-F 3 "~" H 10200 3700 50  0001 C CNN
-	1    10200 3700
+P 10000 3700
+F 0 "#FLG03" H 10000 3775 50  0001 C CNN
+F 1 "PWR_FLAG" V 10000 3828 50  0000 L CNN
+F 2 "" H 10000 3700 50  0001 C CNN
+F 3 "~" H 10000 3700 50  0001 C CNN
+	1    10000 3700
 	0    1    1    0   
 $EndComp
 $Comp
@@ -369,7 +358,7 @@ F 3 "~" H 7600 5950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 7600 5950
-Connection ~ 10200 3700
+Connection ~ 10000 3700
 $Comp
 L Device:R R4
 U 1 1 5E9CAC81
@@ -517,126 +506,126 @@ Connection ~ 2650 4500
 Wire Wire Line
 	2650 4500 2750 4500
 $Comp
-L keyboard_parts:KEYSW K1
+L Switch:SW_Push K1
 U 1 1 5EA2A6C2
 P 3050 1000
 F 0 "K1" H 3050 1339 60  0000 C CNN
 F 1 "UP" H 3050 1233 60  0000 C CNN
-F 2 "switches-copper:MX-100" H 3050 1000 60  0001 C CNN
+F 2 "switches-nocopper:MX-100" H 3050 1000 60  0001 C CNN
 F 3 "" H 3050 1000 60  0000 C CNN
 	1    3050 1000
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L keyboard_parts:KEYSW K7
+L Switch:SW_Push K7
 U 1 1 5EA2B33D
 P 3050 2000
 F 0 "K7" H 3050 2339 60  0000 C CNN
 F 1 "DOWN" H 3050 2233 60  0000 C CNN
-F 2 "switches-copper:MX-100" H 3050 2000 60  0001 C CNN
+F 2 "switches-nocopper:MX-100" H 3050 2000 60  0001 C CNN
 F 3 "" H 3050 2000 60  0000 C CNN
 	1    3050 2000
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L keyboard_parts:KEYSW K3
+L Switch:SW_Push K3
 U 1 1 5EA2C0AC
 P 2450 1500
 F 0 "K3" H 2450 1839 60  0000 C CNN
 F 1 "LEFT" H 2450 1733 60  0000 C CNN
-F 2 "switches-copper:MX-100" H 2450 1500 60  0001 C CNN
+F 2 "switches-nocopper:MX-100" H 2450 1500 60  0001 C CNN
 F 3 "" H 2450 1500 60  0000 C CNN
 	1    2450 1500
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L keyboard_parts:KEYSW K4
+L Switch:SW_Push K4
 U 1 1 5EA2C9DB
 P 3650 1500
 F 0 "K4" H 3650 1839 60  0000 C CNN
 F 1 "RIGHT" H 3650 1733 60  0000 C CNN
-F 2 "switches-copper:MX-100" H 3650 1500 60  0001 C CNN
+F 2 "switches-nocopper:MX-100" H 3650 1500 60  0001 C CNN
 F 3 "" H 3650 1500 60  0000 C CNN
 	1    3650 1500
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L keyboard_parts:KEYSW K8
+L Switch:SW_Push K8
 U 1 1 5EA3017D
 P 4750 1600
 F 0 "K8" H 4750 1939 60  0000 C CNN
 F 1 "B" H 4750 1833 60  0000 C CNN
-F 2 "switches-copper:MX-100" H 4750 1600 60  0001 C CNN
+F 2 "switches-nocopper:MX-100" H 4750 1600 60  0001 C CNN
 F 3 "" H 4750 1600 60  0000 C CNN
 	1    4750 1600
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L keyboard_parts:KEYSW K6
+L Switch:SW_Push K6
 U 1 1 5EA30189
 P 5850 1400
 F 0 "K6" H 5850 1739 60  0000 C CNN
 F 1 "A" H 5850 1633 60  0000 C CNN
-F 2 "switches-copper:MX-100" H 5850 1400 60  0001 C CNN
+F 2 "switches-nocopper:MX-100" H 5850 1400 60  0001 C CNN
 F 3 "" H 5850 1400 60  0000 C CNN
 	1    5850 1400
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L keyboard_parts:SW_PUSH SW2
+L Switch:SW_Push SW2
 U 1 1 5EA41510
 P 3750 2550
 F 0 "SW2" H 3750 2550 50  0000 C CNN
 F 1 "SELECT" H 3750 2450 50  0000 C CNN
-F 2 "crokto:TS-1187A-B-A-B" H 3750 2550 60  0001 C CNN
+F 2 "crokto:FSMJ_2-1825910-7" H 3750 2550 60  0001 C CNN
 F 3 "" H 3750 2550 60  0000 C CNN
 	1    3750 2550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L keyboard_parts:SW_PUSH SW3
+L Switch:SW_Push SW3
 U 1 1 5EA41D3D
 P 4650 2550
 F 0 "SW3" H 4650 2550 50  0000 C CNN
 F 1 "START" H 4650 2450 50  0000 C CNN
-F 2 "crokto:TS-1187A-B-A-B" H 4650 2550 60  0001 C CNN
+F 2 "crokto:FSMJ_2-1825910-7" H 4650 2550 60  0001 C CNN
 F 3 "" H 4650 2550 60  0000 C CNN
 	1    4650 2550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
-Text Label 3350 1000 0    50   ~ 0
+Text Label 3250 1000 0    50   ~ 0
 c
-Text Label 2750 1500 0    50   ~ 0
+Text Label 2650 1500 0    50   ~ 0
 c
-Text Label 3950 1500 0    50   ~ 0
+Text Label 3850 1500 0    50   ~ 0
 c
-Text Label 3350 2000 0    50   ~ 0
+Text Label 3250 2000 0    50   ~ 0
 c
 Text Label 3350 6100 0    50   ~ 0
 c
-Text Label 4050 2550 0    50   ~ 0
+Text Label 3950 2550 0    50   ~ 0
 c
-Text Label 4950 2550 0    50   ~ 0
+Text Label 4850 2550 0    50   ~ 0
 c
-Text Label 5050 1600 0    50   ~ 0
+Text Label 4950 1600 0    50   ~ 0
 c
-Text Label 6150 1400 0    50   ~ 0
+Text Label 6050 1400 0    50   ~ 0
 c
-Text Label 2750 1000 2    50   ~ 0
+Text Label 2850 1000 2    50   ~ 0
 up
-Text Label 2150 1500 2    50   ~ 0
+Text Label 2250 1500 2    50   ~ 0
 left
-Text Label 3350 1500 2    50   ~ 0
+Text Label 3450 1500 2    50   ~ 0
 right
-Text Label 2750 2000 2    50   ~ 0
+Text Label 2850 2000 2    50   ~ 0
 down
-Text Label 3450 2550 2    50   ~ 0
+Text Label 3550 2550 2    50   ~ 0
 select
-Text Label 4350 2550 2    50   ~ 0
+Text Label 4450 2550 2    50   ~ 0
 start
-Text Label 4450 1600 2    50   ~ 0
+Text Label 4550 1600 2    50   ~ 0
 b
-Text Label 5550 1400 2    50   ~ 0
+Text Label 5650 1400 2    50   ~ 0
 a
 Text Label 3350 5300 0    50   ~ 0
 up
@@ -654,4 +643,28 @@ Text Label 3350 5000 0    50   ~ 0
 select
 Text Label 3350 4900 0    50   ~ 0
 start
+Connection ~ 1900 4800
+NoConn ~ 7300 5950
+NoConn ~ 3350 5700
+NoConn ~ 3350 5800
+NoConn ~ 3350 5900
+NoConn ~ 3350 6000
+NoConn ~ 3350 6300
+NoConn ~ 3350 6400
+NoConn ~ 3350 6500
+NoConn ~ 3350 6600
+NoConn ~ 3350 6700
+NoConn ~ 3350 6800
+NoConn ~ 3350 6900
+$Comp
+L Mechanical:MountingHole L1
+U 1 1 5EBBDA9C
+P 5450 4600
+F 0 "L1" H 5550 4646 50  0000 L CNN
+F 1 "MountingHole" H 5550 4555 50  0000 L CNN
+F 2 "logo:metamechs logo tiny" H 5450 4600 50  0001 C CNN
+F 3 "~" H 5450 4600 50  0001 C CNN
+	1    5450 4600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

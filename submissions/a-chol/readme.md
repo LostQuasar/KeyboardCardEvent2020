@@ -1,6 +1,6 @@
 # random_bytes' Business card
-![front](https://i.imgur.com/MfZOr6k.png)
-![back](https://i.imgur.com/ZE3Dahz.png)
+![front](https://i.imgur.com/QxNDBjb.png)
+![back](https://i.imgur.com/m6ax66I.png)
 
 Here is a business card which functionality is related to my username.
 

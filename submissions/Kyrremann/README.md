@@ -1,8 +1,8 @@
 # Kyrremann's Business card
 
-![the front of the card](https://i.imgur.com/C54tyKq.png)
+![the front of the card](https://i.imgur.com/ZxX6Vy3.png)
 
-![the back of the card](https://i.imgur.com/qHMhF8K.png)
+![the back of the card](https://i.imgur.com/8ZvGVeh.png)
 
 This is my business card aka the keychuks! The keyboard can be split in two, and connected with 6 individual wires to
 form a split board, or used as nunchuks when you're bored.

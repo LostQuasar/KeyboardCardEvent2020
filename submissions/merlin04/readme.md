@@ -8,6 +8,8 @@
 
 ### [View more photos here](photos.md)
 
+### [Video of the applications on the card](https://keypcb.xyz/Content/resources/card-video.mp4)
+
 My business card features a unique design and a variety of games that you can play on it. I've split the information into two sections:
 
  - Hardware - information about the hardware, schematics, and setting up PCBmodE to edit the PCB and export Gerbers

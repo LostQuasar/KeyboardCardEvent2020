@@ -1,0 +1,586 @@
+{
+  "components": {
+    "B1": {
+      "assembly": {
+        "refdef": {
+          "show": false
+        }
+      }, 
+      "footprint": "batt_holder", 
+      "layer": "top", 
+      "location": [
+        0, 
+        -4
+      ], 
+      "rotate": 0, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }, 
+        "shapes": {
+          "show": false
+        }
+      }
+    }, 
+    "C1": {
+      "assembly": {
+        "refdef": {
+          "show": true
+        }
+      }, 
+      "footprint": "0805-cap", 
+      "layer": "top", 
+      "location": [
+        -24, 
+        21.3
+      ], 
+      "rotate": -70, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }, 
+        "shapes": {
+          "show": true
+        }
+      }
+    }, 
+    "J1": {
+      "assembly": {
+        "refdef": {
+          "show": true
+        }
+      }, 
+      "footprint": "header-3pin-sneaky", 
+      "layer": "top", 
+      "location": [
+        0, 
+        23.2
+      ], 
+      "rotate": 0, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }, 
+        "shapes": {
+          "show": true
+        }
+      }
+    }, 
+    "J2": {
+      "assembly": {
+        "refdef": {
+          "show": true
+        }
+      }, 
+      "footprint": "header-2pin", 
+      "layer": "bottom", 
+      "location": [
+        -37.5, 
+        -4
+      ], 
+      "rotate": 0, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }, 
+        "shapes": {
+          "show": true
+        }
+      }
+    }, 
+    "P1": {
+      "assembly": {
+        "refdef": {
+          "show": true
+        }
+      }, 
+      "footprint": "KLJ-1102", 
+      "layer": "top", 
+      "location": [
+        -20.5, 
+        0
+      ], 
+      "rotate": 0, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }, 
+        "shapes": {
+          "show": false
+        }
+      }
+    }, 
+    "S1": {
+      "assembly": {
+        "refdef": {
+          "show": true
+        }
+      }, 
+      "footprint": "switch", 
+      "layer": "top", 
+      "location": [
+        35.75, 
+        0
+      ], 
+      "rotate": 90, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }, 
+        "shapes": {
+          "show": false
+        }
+      }
+    }, 
+    "SW1": {
+      "assembly": {
+        "refdef": {
+          "show": true
+        }
+      }, 
+      "footprint": "choc_switch", 
+      "layer": "top", 
+      "location": [
+        -35.75, 
+        16.25
+      ], 
+      "rotate": 0, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }, 
+        "shapes": {
+          "show": false
+        }
+      }
+    }, 
+    "SW2": {
+      "assembly": {
+        "refdef": {
+          "show": true
+        }
+      }, 
+      "footprint": "choc_switch", 
+      "layer": "top", 
+      "location": [
+        -35.75, 
+        -16.25
+      ], 
+      "rotate": 0, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }, 
+        "shapes": {
+          "show": false
+        }
+      }
+    }, 
+    "SW3": {
+      "assembly": {
+        "refdef": {
+          "show": true
+        }
+      }, 
+      "footprint": "choc_switch", 
+      "layer": "top", 
+      "location": [
+        35.75, 
+        16.25
+      ], 
+      "rotate": 0, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }, 
+        "shapes": {
+          "show": false
+        }
+      }
+    }, 
+    "SW4": {
+      "assembly": {
+        "refdef": {
+          "show": true
+        }
+      }, 
+      "footprint": "choc_switch", 
+      "layer": "top", 
+      "location": [
+        35.75, 
+        -16.25
+      ], 
+      "rotate": 0, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }, 
+        "shapes": {
+          "show": false
+        }
+      }
+    }, 
+    "U1": {
+      "assembly": {
+        "refdef": {
+          "show": true
+        }
+      }, 
+      "footprint": "ATtiny3216", 
+      "layer": "top", 
+      "location": [
+        -35.75, 
+        0
+      ], 
+      "rotate": 0, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }, 
+        "shapes": {
+          "show": false
+        }
+      }
+    }, 
+    "U2": {
+      "assembly": {
+        "refdef": {
+          "show": true
+        }
+      }, 
+      "footprint": "oled", 
+      "layer": "top", 
+      "location": [
+        0, 
+        3
+      ], 
+      "rotate": 0, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }, 
+        "shapes": {
+          "show": false
+        }
+      }
+    }
+  }, 
+  "config": {
+    "name": "card", 
+    "no-docs": true, 
+    "no-drill-index": false, 
+    "no-flashes": false, 
+    "no-layer-index": false, 
+    "rev": "first", 
+    "style-layout": "default", 
+    "units": "mm"
+  }, 
+  "distances": {
+    "from-pour-to": {
+      "drill": 0.25, 
+      "outline": 0.25, 
+      "pad": 0.25, 
+      "route": 0.25
+    }, 
+    "soldermask": {
+      "circle-buffer": 0.05, 
+      "path-scale": 1.05, 
+      "rect-buffer": 0.05
+    }, 
+    "solderpaste": {
+      "circle-buffer": -0.1, 
+      "path-scale": 0.9, 
+      "rect-buffer": -0.1
+    }
+  }, 
+  "documentation": {
+    "board-details": {
+      "font-family": "Overlock-Regular-OTF-webfont", 
+      "font-size": "1.5mm", 
+      "letter-spacing": "0mm", 
+      "line-height": "1.5mm", 
+      "location": [
+        -8.9992538, 
+        -16.098206
+      ], 
+      "rotate": 0, 
+      "style": "fill", 
+      "type": "text", 
+      "value": "Board details:\nName: Card\nRevision: first\nDescription: Business card with game and mechanical keyswitches\nLicense: GPL v3"
+    }, 
+    "manufacturing": {
+      "font-family": "Overlock-Regular-OTF-webfont", 
+      "font-size": "1.5mm", 
+      "letter-spacing": "0mm", 
+      "line-height": "1.5mm", 
+      "location": [
+        -5.8472708, 
+        -29.110408
+      ], 
+      "rotate": 0, 
+      "style": "fill", 
+      "type": "text", 
+      "value": "Manufacturing:\nRoHS and lead free compliant manufacturing process\nUnit of length: Millimetre (mm)\nNumber of layers: 2 ('top', 'bottom')\nBoard thickness: 1.6 mm"
+    }, 
+    "pcbmode": {
+      "font-family": "Overlock-Regular-OTF-webfont", 
+      "font-size": "1.2mm", 
+      "letter-spacing": "0mm", 
+      "line-height": "1.2mm", 
+      "location": [
+        -9.6572618, 
+        -39.837658
+      ], 
+      "rotate": 0, 
+      "style": "fill", 
+      "type": "text", 
+      "value": "Designed with PCBmodE, an open source software\n     http://pcbmode.com\nStay updated:\n     @boldport @pcbmode http://boldport.com"
+    }
+  }, 
+  "drill-index": {
+    "location": [
+      60.0, 
+      -7.2889825
+    ]
+  }, 
+  "drills": {}, 
+  "files": {
+    "routing-data": "card_routing.json", 
+    "routing-svg": "card.svg"
+  }, 
+  "gerber": {
+    "decimals": 6, 
+    "digits": 6, 
+    "min-segment-length": 0.05, 
+    "steps-per-segment": 100
+  }, 
+  "layer-control": {
+    "assembly": {
+      "hide": false, 
+      "lock": false, 
+      "place": true
+    }, 
+    "conductor": {
+      "hide": false, 
+      "lock": false, 
+      "pads": {
+        "hide": false, 
+        "lock": false, 
+        "place": true
+      }, 
+      "place": true, 
+      "pours": {
+        "hide": false, 
+        "lock": true, 
+        "place": true
+      }, 
+      "routing": {
+        "hide": false, 
+        "lock": false, 
+        "place": true
+      }
+    }, 
+    "dimensions": {
+      "hide": false, 
+      "lock": true, 
+      "place": true
+    }, 
+    "documentation": {
+      "hide": false, 
+      "lock": false, 
+      "place": true
+    }, 
+    "drills": {
+      "hide": false, 
+      "lock": false, 
+      "place": true
+    }, 
+    "origin": {
+      "hide": false, 
+      "lock": true, 
+      "place": true
+    }, 
+    "outline": {
+      "hide": false, 
+      "lock": true, 
+      "place": true
+    }, 
+    "placement": {
+      "hide": false, 
+      "lock": false, 
+      "place": true
+    }, 
+    "silkscreen": {
+      "hide": false, 
+      "lock": false, 
+      "place": true
+    }, 
+    "soldermask": {
+      "hide": false, 
+      "lock": false, 
+      "place": true
+    }, 
+    "solderpaste": {
+      "hide": true, 
+      "lock": true, 
+      "place": true
+    }
+  }, 
+  "outline": {
+    "shape": {
+      "height": 50, 
+      "radii": {
+        "bl": 1, 
+        "br": 1, 
+        "tl": 1, 
+        "tr": 1
+      }, 
+      "type": "rect", 
+      "width": 90
+    }
+  }, 
+  "shapes": {
+    "KeyPCB-text": {
+      "assembly": {
+        "refdef": {
+          "show": false
+        }
+      }, 
+      "footprint": "KeyPCB", 
+      "layer": "top", 
+      "location": [
+        -13.5, 
+        -20.5
+      ], 
+      "rotate": 0, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    }, 
+    "POURS": {
+      "footprint": "both-sides-pour", 
+      "layer": "top", 
+      "location": [
+        0, 
+        0
+      ], 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    }, 
+    "UPDI-label-text": {
+      "assembly": {
+        "refdef": {
+          "show": false
+        }
+      }, 
+      "footprint": "UPDI-label", 
+      "layer": "bottom", 
+      "location": [
+        0.12, 
+        20.5
+      ], 
+      "rotate": 0, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    }, 
+    "onoff-text": {
+      "assembly": {
+        "refdef": {
+          "show": false
+        }
+      }, 
+      "footprint": "OnOff", 
+      "layer": "top", 
+      "location": [
+        42, 
+        0
+      ], 
+      "rotate": -90, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    }, 
+    "tx-rx-text": {
+      "assembly": {
+        "refdef": {
+          "show": false
+        }
+      }, 
+      "footprint": "rx-tx-label", 
+      "layer": "bottom", 
+      "location": [
+        -40, 
+        -4
+      ], 
+      "rotate": 0, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    }, 
+    "website-text": {
+      "assembly": {
+        "refdef": {
+          "show": false
+        }
+      }, 
+      "footprint": "website", 
+      "layer": "top", 
+      "location": [
+        12.5, 
+        -20.1
+      ], 
+      "rotate": 0, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    }
+  }, 
+  "soldermask": {
+    "circle-buffer": 0.05, 
+    "path-scale": 1.05, 
+    "rect-buffer": 0.05
+  }, 
+  "solderpaste": {
+    "circle-buffer": -0.1, 
+    "path-scale": 0.9, 
+    "rect-buffer": -0.1
+  }, 
+  "stackup": {
+    "name": "two-layer"
+  }, 
+  "vias": {
+    "default-via": "VIA"
+  }
+}

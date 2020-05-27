@@ -1,0 +1,96 @@
+{
+  "pins": {
+    "1": {
+      "layout": {
+        "pad": "pin",
+        "location": [
+          -2.54,
+          -0.127
+        ]
+      }
+    },
+    "2": {
+      "layout": {
+        "pad": "pin",
+        "location": [
+          0.0,
+          0.127
+        ]
+      }
+    },
+    "3": {
+      "layout": {
+        "pad": "pin",
+        "location": [
+          2.54,
+          -0.127
+        ]
+      }
+    }
+  },
+  "layout": {
+    "silkscreen": {
+      "shapes": [
+        {
+          "type": "path",
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "value": "m 30.917189,-10.133009 -0.564444,0.7267765 -7.208661,0 -0.564444,-0.7267765 m 0,-1.453555 0.564444,-0.726777 7.208661,0 0.564444,0.726777",
+          "style": "stroke",
+          "stroke-width": 0.25,
+          "location": [
+            0,
+            0
+          ]
+        },
+        {
+          "type": "text",
+          "layers": [
+            "top"
+          ],
+          "font-family": "Overlock-Regular-OTF-webfont",
+          "font-size": "3mm",
+          "letter-spacing": "0mm",
+          "line-height": "3mm",
+          "location": [
+            0,
+            -3
+          ],
+          "rotate": 0,
+          "style": "fill",
+          "value": "UPDI"
+        }
+      ]
+    },
+    "assembly": {
+      "shapes": [
+        {
+          "type": "rect",
+          "width": 7.4,
+          "height": 1.8
+        }
+      ]
+    }
+  },
+  "pads": {
+    "pin": {
+      "shapes": [
+        {
+          "layers": [
+            "top",
+            "bottom"
+          ],
+          "type": "circle",
+          "diameter": 1.9
+        }
+      ],
+      "drills": [
+        {
+          "diameter": 1
+        }
+      ]
+    }
+  }
+}

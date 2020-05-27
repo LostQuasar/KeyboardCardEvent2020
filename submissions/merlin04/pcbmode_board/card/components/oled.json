@@ -1,0 +1,118 @@
+{
+    "info": {
+        "description": "128*32 OLED display",
+        "notes": ""
+    },
+    "pins": {
+        "1": {
+            "layout": {
+                "pad": "pin",
+                "location": [
+                    -3.81,
+                    12.4
+                ]
+            }
+        },
+        "2": {
+            "layout": {
+                "pad": "pin",
+                "location": [
+                    -1.27,
+                    12.4
+                ]
+            }
+        },
+        "3": {
+            "layout": {
+                "pad": "pin",
+                "location": [
+                    1.27,
+                    12.4
+                ]
+            }
+        },
+        "4": {
+            "layout": {
+                "pad": "pin",
+                "location": [
+                    3.81,
+                    12.4
+                ]
+            }
+        },
+        "m1": {
+            "layout": {
+                "pad": "mounting-hole",
+                "location": [
+                    -12.9,
+                    -12.83
+                ]
+            }
+        },
+        "m2": {
+            "layout": {
+                "pad": "mounting-hole",
+                "location": [
+                    12.9,
+                    -12.83
+                ]
+            }
+        }
+    },
+    "layout": {
+        "silkscreen": {
+            "shapes": [
+                {
+                    "type": "rect",
+                    "style": "stroke",
+                    "stroke-width": 0.35,
+                    "width": 27.3,
+                    "height": 27.8,
+                    "location": [
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        "assembly": {
+            "shapes": [
+                {
+                    "type": "rect",
+                    "width": 21.744,
+                    "height": 10.864,
+                    "location": [
+                        0,
+                        3.767
+                    ]
+                }
+            ]
+        }
+    },
+    "pads": {
+        "pin": {
+            "shapes": [
+                {
+                    "layers": [
+                        "top",
+                        "bottom"
+                    ],
+                    "type": "circle",
+                    "diameter": 1.9
+                }
+            ],
+            "drills": [
+                {
+                    "diameter": 1
+                }
+            ]
+        },
+        "mounting-hole": {
+            "drills": [
+                {
+                    "diameter": 2.5
+                }
+            ]
+        }
+    }
+}

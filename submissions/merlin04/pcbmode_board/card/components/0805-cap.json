@@ -1,0 +1,78 @@
+{
+    "pins": {
+        "1": {
+            "layout": {
+                "pad": "pad",
+                "location": [
+                    -1.143,
+                    0
+                ]
+            }
+        },
+        "2": {
+            "layout": {
+                "pad": "pad",
+                "location": [
+                    1.143,
+                    0
+                ],
+                "rotate": 180
+            }
+        }
+    },
+    "layout": {
+        "silkscreen": {
+            "shapes": [
+                {
+                    "type": "rect",
+                    "width": 0.17,
+                    "height": 1,
+                    "location": [
+                        0.14,
+                        0
+                    ],
+                    "style": "fill"
+                },
+                {
+                    "type": "rect",
+                    "width": 0.17,
+                    "height": 1,
+                    "location": [
+                        -0.14,
+                        0
+                    ],
+                    "style": "fill"
+                }
+            ]
+        },
+        "assembly": {
+            "shapes": [
+                {
+                    "type": "rect",
+                    "width": 2.55,
+                    "height": 1.4
+                }
+            ]
+        }
+    },
+    "pads": {
+        "pad": {
+            "shapes": [
+                {
+                    "type": "rect",
+                    "layers": [
+                        "top"
+                    ],
+                    "width": 1.542,
+                    "height": 1.143,
+                    "radii": {
+                        "tl": 0.25,
+                        "tr": 0,
+                        "bl": 0.25,
+                        "br": 0
+                    }
+                }
+            ]
+        }
+    }
+}

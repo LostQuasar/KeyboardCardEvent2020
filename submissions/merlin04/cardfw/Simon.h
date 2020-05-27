@@ -1,5 +1,5 @@
 #include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
+#include "Adafruit_SSD1306.h"
 
 class Simon {
   Adafruit_SSD1306* oled;

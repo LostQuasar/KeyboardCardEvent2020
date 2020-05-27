@@ -5,7 +5,7 @@
 #define BUTTON1 0
 #define BUTTON2 1
 #define BUTTON3 2
-#define BUTTON4 4
+#define BUTTON4 3
 
 #define PIEZO_PIN 11
 #endif
@@ -27,27 +27,27 @@ Simon::Simon(Adafruit_SSD1306 *_oled)
 
 uint32_t Simon::run()
 {
-  dP("Simon::run");
+  //dP("Simon::run");
   main();
   return level;
 }
 
 void Simon::main()
 {
-  dP("Simon::main");
+  //dP("Simon::main");
   // Original Simon game had 35 levels
   uint8_t sequence[34];
   for (uint8_t i = 0; i < 35; i++) {
     sequence[i] = random(4);
   }
-  dP("Generated sequence");
+  //dP("Generated sequence");
 
   bool choseIncorrect = false;
   for (level = 0; ((level < 35) && !choseIncorrect); level++)
   {
     drawButtonState(-1);
     delay(500);
-    dP("Play tones");
+    //dP("Play tones");
     for (uint8_t i = 0; i <= level; i++) {
       drawButtonState(sequence[i]);
       playTone(sequence[i], 400);
@@ -56,25 +56,25 @@ void Simon::main()
       delay(300);
     }
 
-    dP("User input");
-    dP("Level: ");
-    dP((String)level);
+    //dP("User input");
+    //dP("Level: ");
+    //dP((String)level);
     for (uint8_t i = 0; ((i <= level) && !choseIncorrect); i++) {
-      dP("i");
-      dP((String)i);
+      //dP("i");
+      //dP((String)i);
       uint8_t buttonPressed = getButtonPress();
-      dP("sequence[i]");
-      dP((String)(sequence[i]));
-      dP("Button");
-      dP((String)buttonPressed);
+      //dP("sequence[i]");
+      //dP((String)(sequence[i]));
+      //dP("Button");
+      //dP((String)buttonPressed);
       if (!(buttonPressed == sequence[i])) {
-        dP("Set choseIncorrect");
+        //dP("Set choseIncorrect");
         choseIncorrect = true;
       }
     }
-    dP("-----------");
+    //dP("-----------");
   }
-  dP("Game over");
+  //dP("Game over");
   oled->clearDisplay();
   oled->setCursor(0, 0);
   oled->setTextSize(2);
@@ -91,7 +91,7 @@ void Simon::main()
     oled->print("Good job!");
     oled->setTextSize(1);
     oled->setCursor(0, 22);
-    oled->println("You completed level 35!");
+    oled->println("You finished level 35");
   }
   oled->println("Press any button");
   oled->println("to exit.");
@@ -169,54 +169,19 @@ void Simon::playTone(uint8_t pressedButton, int duration) {
 }
 
 uint8_t Simon::getButtonPress() {
-  bool button1 = false;
-  bool button2 = false;
-  bool button3 = false;
-  bool button4 = false;
-  dP("Get button press");
-  while (!(button1 || button2 || button3 || button4)) {
-    // Read buttons
-    button1 = (digitalRead(BUTTON1) == LOW);
-    button2 = (digitalRead(BUTTON2) == LOW);
-    button3 = (digitalRead(BUTTON3) == LOW);
-    button4 = (digitalRead(BUTTON4) == LOW);
-  }
-  dP("debounce");
-  if (button1) {
-    delay(DEBOUNCE_DELAY);
-    drawButtonState(0);
-    playTone(0, -1);
-    while (digitalRead(BUTTON1) == LOW) {}
-    noTone(PIEZO_PIN);
-    drawButtonState(-1);
-    return 0;
-  }
-  else if (button2) {
-    delay(DEBOUNCE_DELAY);
-    drawButtonState(1);
-    playTone(1, -1);
-    while (digitalRead(BUTTON2) == LOW) {}
-    noTone(PIEZO_PIN);
-    drawButtonState(-1);
-    return 1;
-  }
-  else if (button3) {
-    delay(DEBOUNCE_DELAY);
-    drawButtonState(2);
-    playTone(2, -1);
-    while (digitalRead(BUTTON3) == LOW) {}
-    noTone(PIEZO_PIN);
-    drawButtonState(-1);
-    return 2;
-  }
-  else if (button4) {
-    delay(DEBOUNCE_DELAY);
-    drawButtonState(3);
-    playTone(3, -1);
-    while (digitalRead(BUTTON4) == LOW) {}
-    noTone(PIEZO_PIN);
-    drawButtonState(-1);
-    return 3;
+  //dP("Get button press");
+  while(true) {
+    for(uint8_t i = 0; i < 4; i++) {
+      if(digitalRead(i) == LOW) {
+        delay(DEBOUNCE_DELAY);
+        drawButtonState(i);
+        playTone(i, -1);
+        while (digitalRead(i) == LOW) {}
+        noTone(PIEZO_PIN);
+        drawButtonState(-1);
+        return i;
+      }
+    }
   }
 }
 

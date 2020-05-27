@@ -1,13 +1,17 @@
 # KeyPCB's Business card
 
-## This is still a work in progress
+![Front of card](https://keypcb.xyz/Content/resources/card 1.JPG)
+
+![Front of PCB](https://keypcb.xyz/Content/resources/card 4.JPG)
 
 ![PCBmodE svg](https://i.vgy.me/M6qAQc.png)
+
+### [View more photos here](photos.md)
 
 My business card features a unique design and a variety of games that you can play on it. I've split the information into two sections:
 
  - Hardware - information about the hardware, schematics, and setting up PCBmodE to edit the PCB and export Gerbers
- - Firmware - information about the firmware features, how to set up Arduino IDE to edit it, how to program the card, and an overview of the code.
+ - Firmware - information about the firmware features, how to set up Arduino IDE to edit it, and how to program the card.
 
 ## Hardware
 My card has a PCB that is designed in PCBmodE, a PCB editor that lets you define the PCB in JSON files and route it using Inkscape (a vector graphics editor). This makes it very flexible and allows you to have features such as traces that are curves, custom copper fill patterns, and native support for different fonts and vector graphics. The card's design takes full advantage of this flexibility, and has a unique aesthetic that something like KiCad couldn't reproduce. 
@@ -80,18 +84,22 @@ I ordered the PCBs from JLCPCB in blue with the ENIG surface finish and a 1.0 mm
 Then (assuming you've already done the PCBmodE setup discussed earlier), run `pcbmode -b card -m` in the `pcbmode` directory. This will take a while. Once that's finished, run `pcbmode -b card --fab oshpark` to generate the gerbers.
 
 ### 3D printing
-To 3D print the two parts, I used my Prusa i3 MK3S with blue Prusament PLA. This will probably work with other materials too. For the spacer, I rotated the part upside-down, enabled supports, and selected 0.15mm layer height. The settings for the key aren't as important.
+To 3D print the two parts, I used my Prusa i3 MK3S with blue Prusament PLA. This will probably work with other materials too. For the spacer, I rotated the part upside-down, enabled supports, and selected 0.1mm layer height. The settings for the key aren't as important.
 
 ## Firmware
 The firmware for my card is custom made in the Arduino IDE. It features several applications:
 
- - KeyPCB - information about me and my PCB design services.
- - Reaction game - a multiplayer game where you have to press a button when a timer reaches 0, the player with the most accurate timing wins.
+ - KeyPCB - information about me and my PCB design services, taken from [my website](https://keypcb.xyz).
+ - Reaction - a multiplayer game where you have to press a button when a timer reaches 0, the player with the most accurate timing wins.
+ - Tetris - a Tetris game. This has been ported from [TinyTetris](https://github.com/AJRussell/Tiny-Tetris), and it's been modified to work better with my card (changing button mappings, removing unneeded features to save on flash space, etc).
  - Simon - the classic memory game.
- - Tetris - a Tetris game. This has been ported from the Keebcard's firmware and modified to work better with my card.
- - Snake - a Snake game. This has also been ported from the Keebcard firmware. 
  - Scores - view your high scores from each game.
- - Settings - configure settings and view information about the firmware. 
+ - Settings - view the amount of free RAM and reset the high scores.
+
+All of these together take up almost the entire flash memory of the microcontroller, so there probably isn't room to add anything else unless it is really simple.
+
+### Button mappings
+In the menu and in KeyPCB, the left two buttons are up and down. In almost everything that isn't a game, the upper right button is select and the lower right is back. For Reaction and Simon, the buttons correspond to the rectangles/numbers shown on screen. Tetris uses a rotated screen, so if you rotate the card so that the power switch is at the bottom, the bottom two buttons are left and right, the upper left button is rotate, and the upper right button is down.
 
 ### Setting up Arduino IDE
 The ATtiny3216 isn't normally supported in the Arduino IDE, so you'll need to install [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore/blob/master/Installation.md). Once it's installed, make sure the following selections are made in the `Tools` menu:
@@ -103,19 +111,11 @@ The ATtiny3216 isn't normally supported in the Arduino IDE, so you'll need to in
  - BOD Mode (sleep): Disabled
  - Save EEPROM: Set this to "EEPROM retained" unless you want to reset the high scores or re-use a chip with something else in the EEPROM
  - Clock Speed: 20 MHz (you can lower this to try to save battery life but it might affect performance
- - DAC Voltage Reference: 0.55V
- - tinyNeoPixel Port: PORTA
  - millis()/micros(): Enabled (default timer)
  - Voltage for UART baud calc: Closer to 3v
- - UART pins: TX:7, RX:6
- - I2C (TWI) pins: SDA:14, SCL:15
- - SPI pins: SCK:16, MISO:15, MOSI:14
  - Programmer: jtag2updi (megaTinyCore)
 
 ### Programming chip
 To program the chip, you will need a programmer. This can be built using almost any Arduino (I used an Uno). Follow the instructions [here](https://github.com/SpenceKonde/jtag2updi) to program the Arduino Uno and to build the programming circuit. The VCC, GND, and UPDI pins are labeled on the board. It's probably a good idea to turn the battery power off and connect the VCC pin to any 3.3V power source (most Arduinos have one) when programming. Once this is set up, you can select the port in the Arduino IDE and click the upload button. 
 
 If you don't have an Arduino but you do have a USB to serial adapter, you can try using [pyupdi](https://github.com/mraardvark/pyupdi). I've sometimes been able to get it to work but a lot of the time it throws a bunch of errors. If you use this you'll have to compile the firmware as a hex file in the Arduino IDE and use the pyupdi command line tool to flash it. 
-
-### Code overview
-The firmware has two main parts; a menu and multiple apps. Some simpler apps are functions in the main `cardfw.ino` file (like KeyPCB and the intro, which is a special app that runs when the card starts up), while others are classes with .cpp and .h files. The code uses Adafruit's SSD1306 and GFX libraries for writing to the display. There is an option to define "ARDUINO_UNO", which I used early in development to get the code to work on the Arduino Uno before I had an ATtiny3216. The pin numbers are specified in in #define statements at the top of the code, and these are copied over to each .cpp file manually. There are `Serial.println` statements throughout the code, and you can access the serial port on the card through the pins on the back of the card (underneath the chip). 

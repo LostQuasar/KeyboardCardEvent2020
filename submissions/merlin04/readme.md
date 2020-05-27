@@ -1,8 +1,8 @@
 # KeyPCB's Business card
 
-![Front of card](https://keypcb.xyz/Content/resources/card 1.JPG)
+![Front of card](https://keypcb.xyz/Content/resources/card%201.JPG)
 
-![Front of PCB](https://keypcb.xyz/Content/resources/card 4.JPG)
+![Front of PCB](https://keypcb.xyz/Content/resources/card%204.JPG)
 
 ![PCBmodE svg](https://i.vgy.me/M6qAQc.png)
 

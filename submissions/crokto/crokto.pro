@@ -1,4 +1,4 @@
-update=5/11/2020 1:10:47 AM
+update=5/13/2020 12:51:00 AM
 version=1
 last_client=kicad
 [general]
@@ -27,7 +27,7 @@ version=1
 PageLayoutDescrFile=
 LastNetListRead=crokto.net
 CopperLayerCount=2
-BoardThickness=0.6
+BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
@@ -256,5 +256,5 @@ ViaDrill=0.4
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.5
-dPairGap=0.25
+dPairGap=0.2
 dPairViaGap=0.25

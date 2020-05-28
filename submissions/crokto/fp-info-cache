@@ -1,4 +1,4 @@
-16521080837004444
+16525627193110398
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -72134,6 +72134,69 @@ transformer flyback
 0
 10
 10
+Type-C
+12401598E4#2A
+
+
+0
+28
+28
+Type-C
+HRO-TYPE-C-31-M-12
+
+
+0
+16
+13
+Type-C
+HRO-TYPE-C-31-M-12-Assembly
+
+
+0
+16
+13
+Type-C
+HRO-TYPE-C-31-M-12-HandSoldering
+
+
+0
+16
+13
+Type-C
+HRO-TYPE-C-31-M-13
+
+
+0
+16
+13
+Type-C
+USB_C_GCT_USB4085
+
+
+0
+20
+17
+Type-C
+Wurth-632723300011
+
+
+0
+32
+27
+Type-C
+Wurth-632723300011-HandSoldering
+
+
+0
+30
+26
+Type-C
+Wurth-632723300011-MaximumExtensionMount
+
+
+0
+32
+27
 Valve
 Valve_ECC-83-1
 Valve ECC-83-1 round pins
@@ -72982,6 +73045,13 @@ SOD-123
 3
 2
 crokto
+D_SOD-323F-VIA
+SOD-323F http://www.nxp.com/documents/outline_drawing/SOD323F.pdf
+SOD-323F
+0
+3
+2
+crokto
 EC10E
 
 
@@ -72995,13 +73065,6 @@ rotary encoder
 0
 7
 6
-crokto
-FSMJ_2-1825910-7
-
-
-0
-4
-2
 crokto
 HTP-CON-M411P-F
 
@@ -73317,6 +73380,27 @@ tsuka outline
 0
 0
 0
+crokto2
+2x3-jumper
+Through hole straight pin header, 2x03, 2.54mm pitch, double rows
+Through hole pin header THT 2x03 2.54mm double row
+0
+6
+6
+crokto2
+smd-jumper
+Through hole straight pin header, 1x02, 2.54mm pitch, single row
+Through hole pin header THT 1x02 2.54mm single row
+0
+2
+2
+logo
+100mm wide logo
+
+
+0
+0
+0
 logo
 logo tiny 2
 
@@ -73415,97 +73499,34 @@ text2 - Copy
 0
 0
 0
-pcb-usb
-USB_TYPE_B_SS_1
-
-
+smd-keys
+100
+ALPS 5.2mm Square Low-profile Type (Surface Mount) SKQG Series, Without stem, http://www.alps.com/prod/info/E/HTML/Tact/SurfaceMount/SKQG/SKQGAEE010.html
+SPST Button Switch
 0
-5
-5
-pcb-usb
-USB_TYPE_B_SS_2
-
-
+4
+2
+smd-keys
+125
+ALPS 5.2mm Square Low-profile Type (Surface Mount) SKQG Series, Without stem, http://www.alps.com/prod/info/E/HTML/Tact/SurfaceMount/SKQG/SKQGAEE010.html
+SPST Button Switch
 0
-5
-5
-pcb-usb
-USB_TYPE_B_SS_3
-
-
+4
+2
+smd-keys
+150
+ALPS 5.2mm Square Low-profile Type (Surface Mount) SKQG Series, Without stem, http://www.alps.com/prod/info/E/HTML/Tact/SurfaceMount/SKQG/SKQGAEE010.html
+SPST Button Switch
 0
-5
-5
-pcb-usb
-USB_TYPE_C_DS_1
-
-
+4
+2
+smd-keys
+200
+ALPS 5.2mm Square Low-profile Type (Surface Mount) SKQG Series, Without stem, http://www.alps.com/prod/info/E/HTML/Tact/SurfaceMount/SKQG/SKQGAEE010.html
+SPST Button Switch
 0
-24
-24
-pcb-usb
-USB_TYPE_C_DS_2
-
-
-0
-24
-24
-pcb-usb
-USB_TYPE_C_DS_3
-
-
-0
-24
-24
-pcb-usb
-USB_TYPE_C_DS_4
-
-
-0
-24
-24
-pcb-usb
-USB_TYPE_C_DS_5
-
-
-0
-24
-24
-pcb-usb
-USB_TYPE_C_W_2.0_1
-
-
-0
-30
-30
-pcb-usb
-USB_TYPE_C_W_2.0_2
-
-
-0
-30
-30
-pcb-usb
-USB_TYPE_C_W_2.0_3
-
-
-0
-30
-30
-pcb-usb
-USB_TYPE_C_W_2.0_4
-
-
-0
-30
-30
-pcb-usb
-USB_TYPE_C_W_2.0_5
-
-
-0
-30
-30
+4
+2
 switches-nocopper
 MX-100
 

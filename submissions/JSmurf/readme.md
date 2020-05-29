@@ -1,8 +1,8 @@
 # JSmurf's Business Card
 
-![Top of Board](https://imgur.com/lRkqFWP)
+![Top of Board](https://imgur.com/lRkqFWP.png)
 
-![Bottom of Board](https://imgur.com/beNMj2l)
+![Bottom of Board](https://imgur.com/beNMj2l.png)
 
 ## [Currently Untitled Keyboard]
 

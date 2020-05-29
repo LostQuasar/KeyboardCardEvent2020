@@ -1,0 +1,836 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Nunchaku business"
+Date "2020-05-31"
+Rev ""
+Comp "Kyrremann.no"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega32U2-MU U1
+U 1 1 5E98A1DF
+P 4550 3200
+F 0 "U1" H 4550 1311 50  0000 C CNN
+F 1 "ATmega32U2-MU" H 4550 1220 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm" H 4550 3200 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc7799.pdf" H 4550 3200 50  0001 C CNN
+F 4 "C57345" H 4550 3200 50  0001 C CNN "LCSC"
+	1    4550 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 5E98CB0D
+P 1250 3450
+F 0 "J1" H 1357 4317 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1357 4226 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 1400 3450 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1400 3450 50  0001 C CNN
+	1    1250 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E98DCEB
+P 2250 3050
+F 0 "R1" V 2043 3050 50  0000 C CNN
+F 1 "5.1K" V 2134 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2180 3050 50  0001 C CNN
+F 3 "~" H 2250 3050 50  0001 C CNN
+F 4 "C23186" H 2250 3050 50  0001 C CNN "LCSC"
+	1    2250 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E98EC5B
+P 2250 3150
+F 0 "R2" V 2050 3150 50  0000 C CNN
+F 1 "5.1K" V 2150 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2180 3150 50  0001 C CNN
+F 3 "~" H 2250 3150 50  0001 C CNN
+F 4 "C23186" H 2250 3150 50  0001 C CNN "LCSC"
+	1    2250 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1850 3050 2100 3050
+Wire Wire Line
+	1850 3150 2100 3150
+$Comp
+L power:GND #PWR07
+U 1 1 5E98F5FE
+P 2650 3100
+F 0 "#PWR07" H 2650 2850 50  0001 C CNN
+F 1 "GND" H 2655 2927 50  0000 C CNN
+F 2 "" H 2650 3100 50  0001 C CNN
+F 3 "" H 2650 3100 50  0001 C CNN
+	1    2650 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3050 2500 3050
+Wire Wire Line
+	2500 3050 2500 3100
+Wire Wire Line
+	2500 3100 2650 3100
+Wire Wire Line
+	2500 3100 2500 3150
+Wire Wire Line
+	2500 3150 2400 3150
+Connection ~ 2500 3100
+$Comp
+L power:GND #PWR010
+U 1 1 5E98FED8
+P 1250 4350
+F 0 "#PWR010" H 1250 4100 50  0001 C CNN
+F 1 "GND" H 1255 4177 50  0000 C CNN
+F 2 "" H 1250 4350 50  0001 C CNN
+F 3 "" H 1250 4350 50  0001 C CNN
+	1    1250 4350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1850 3950
+NoConn ~ 1850 4050
+Text Label 2000 3400 0    50   ~ 0
+D-
+Text Label 2000 3600 0    50   ~ 0
+D+
+Wire Wire Line
+	1850 3450 1950 3450
+Wire Wire Line
+	1950 3450 1950 3400
+Wire Wire Line
+	1950 3400 2000 3400
+Wire Wire Line
+	1850 3350 1950 3350
+Wire Wire Line
+	1950 3350 1950 3400
+Connection ~ 1950 3400
+Wire Wire Line
+	1850 3550 1950 3550
+Wire Wire Line
+	1950 3550 1950 3600
+Wire Wire Line
+	1950 3600 2000 3600
+Wire Wire Line
+	1850 3650 1950 3650
+Wire Wire Line
+	1950 3650 1950 3600
+Connection ~ 1950 3600
+Text Label 1950 2850 0    50   ~ 0
++5v
+Wire Wire Line
+	1850 2850 1950 2850
+$Comp
+L Device:R R3
+U 1 1 5E991C03
+P 3600 2700
+F 0 "R3" V 3393 2700 50  0000 C CNN
+F 1 "22" V 3484 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3530 2700 50  0001 C CNN
+F 3 "~" H 3600 2700 50  0001 C CNN
+F 4 "C23345" H 3600 2700 50  0001 C CNN "LCSC"
+	1    3600 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5E9922CE
+P 3600 2800
+F 0 "R4" V 3400 2800 50  0000 C CNN
+F 1 "22" V 3500 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3530 2800 50  0001 C CNN
+F 3 "~" H 3600 2800 50  0001 C CNN
+F 4 "C23345" H 3600 2800 50  0001 C CNN "LCSC"
+	1    3600 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 2700 3850 2700
+Wire Wire Line
+	3850 2800 3750 2800
+Text Label 3300 2700 2    50   ~ 0
+D-
+Text Label 3300 2800 2    50   ~ 0
+D+
+Wire Wire Line
+	3300 2800 3450 2800
+Wire Wire Line
+	3450 2700 3300 2700
+$Comp
+L power:GND #PWR012
+U 1 1 5E99383A
+P 4050 4700
+F 0 "#PWR012" H 4050 4450 50  0001 C CNN
+F 1 "GND" H 4055 4527 50  0000 C CNN
+F 2 "" H 4050 4700 50  0001 C CNN
+F 3 "" H 4050 4700 50  0001 C CNN
+	1    4050 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4600 4050 4700
+$Comp
+L Device:R R6
+U 1 1 5E994859
+P 5600 4300
+F 0 "R6" V 5393 4300 50  0000 C CNN
+F 1 "10K" V 5484 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5530 4300 50  0001 C CNN
+F 3 "~" H 5600 4300 50  0001 C CNN
+F 4 "C25804" H 5600 4300 50  0001 C CNN "LCSC"
+	1    5600 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 4300 5450 4300
+$Comp
+L power:GND #PWR09
+U 1 1 5E994F6B
+P 5950 4300
+F 0 "#PWR09" H 5950 4050 50  0001 C CNN
+F 1 "GND" H 5955 4127 50  0000 C CNN
+F 2 "" H 5950 4300 50  0001 C CNN
+F 3 "" H 5950 4300 50  0001 C CNN
+	1    5950 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4300 5950 4300
+Text Label 5250 2200 0    50   ~ 0
+ROW0
+Text Label 5250 3400 0    50   ~ 0
+COL00
+Text Label 5250 2800 0    50   ~ 0
+COL01
+Text Label 5250 2300 0    50   ~ 0
+COL02
+Text Label 5250 2400 0    50   ~ 0
+COL03
+Text Label 5250 2500 0    50   ~ 0
+COL04
+Text Label 3700 2100 2    50   ~ 0
+RESET
+Wire Wire Line
+	3700 2100 3850 2100
+Text Label 5450 1150 2    50   ~ 0
+RESET
+$Comp
+L Device:R R5
+U 1 1 5E99B8E1
+P 5650 1450
+F 0 "R5" H 5720 1496 50  0000 L CNN
+F 1 "10K" H 5720 1405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5580 1450 50  0001 C CNN
+F 3 "~" H 5650 1450 50  0001 C CNN
+F 4 "C25804" H 5650 1450 50  0001 C CNN "LCSC"
+	1    5650 1450
+	1    0    0    -1  
+$EndComp
+Text Label 5650 1700 0    50   ~ 0
++5v
+Wire Wire Line
+	5650 1700 5650 1600
+Wire Wire Line
+	5650 1300 5650 1150
+Wire Wire Line
+	5650 1150 5450 1150
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5E99CE32
+P 5850 900
+F 0 "SW1" H 5850 1185 50  0000 C CNN
+F 1 "SW_Push" H 5850 1094 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_CK_RS282G05A3" H 5850 1100 50  0001 C CNN
+F 3 "~" H 5850 1100 50  0001 C CNN
+	1    5850 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1150 5650 900 
+Connection ~ 5650 1150
+$Comp
+L power:GND #PWR01
+U 1 1 5E99D9C9
+P 6050 900
+F 0 "#PWR01" H 6050 650 50  0001 C CNN
+F 1 "GND" H 6055 727 50  0000 C CNN
+F 2 "" H 6050 900 50  0001 C CNN
+F 3 "" H 6050 900 50  0001 C CNN
+	1    6050 900 
+	1    0    0    -1  
+$EndComp
+Text Label 4700 1600 0    50   ~ 0
++5v
+Wire Wire Line
+	4700 1600 4650 1600
+Wire Wire Line
+	4450 1600 4450 1800
+Wire Wire Line
+	4550 1800 4550 1600
+Connection ~ 4550 1600
+Wire Wire Line
+	4550 1600 4450 1600
+Wire Wire Line
+	4650 1800 4650 1600
+Connection ~ 4650 1600
+Wire Wire Line
+	4650 1600 4550 1600
+$Comp
+L Device:C C1
+U 1 1 5E99F9FB
+P 1500 1650
+F 0 "C1" H 1615 1696 50  0000 L CNN
+F 1 "1uF" H 1615 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1538 1500 50  0001 C CNN
+F 3 "~" H 1500 1650 50  0001 C CNN
+F 4 "C15849" H 1500 1650 50  0001 C CNN "LCSC"
+	1    1500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5E9A048B
+P 1850 1650
+F 0 "C2" H 1965 1696 50  0000 L CNN
+F 1 "1uF" H 1965 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1888 1500 50  0001 C CNN
+F 3 "~" H 1850 1650 50  0001 C CNN
+F 4 "C15849" H 1850 1650 50  0001 C CNN "LCSC"
+	1    1850 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5E9A06B9
+P 2200 1650
+F 0 "C4" H 2315 1696 50  0000 L CNN
+F 1 "0.1uF" H 2315 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2238 1500 50  0001 C CNN
+F 3 "~" H 2200 1650 50  0001 C CNN
+F 4 "C14663" H 2200 1650 50  0001 C CNN "LCSC"
+	1    2200 1650
+	1    0    0    -1  
+$EndComp
+Text Label 3850 3000 2    50   ~ 0
+UCAP
+Text Label 2650 1500 2    50   ~ 0
+UCAP
+Text Label 1500 1500 2    50   ~ 0
++5v
+Text Label 1850 1500 2    50   ~ 0
++5v
+Text Label 2200 1500 2    50   ~ 0
++5v
+$Comp
+L power:GND #PWR02
+U 1 1 5E9A0D21
+P 1500 1800
+F 0 "#PWR02" H 1500 1550 50  0001 C CNN
+F 1 "GND" H 1505 1627 50  0000 C CNN
+F 2 "" H 1500 1800 50  0001 C CNN
+F 3 "" H 1500 1800 50  0001 C CNN
+	1    1500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5E9A1095
+P 1850 1800
+F 0 "#PWR03" H 1850 1550 50  0001 C CNN
+F 1 "GND" H 1855 1627 50  0000 C CNN
+F 2 "" H 1850 1800 50  0001 C CNN
+F 3 "" H 1850 1800 50  0001 C CNN
+	1    1850 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5E9A12A0
+P 2200 1800
+F 0 "#PWR04" H 2200 1550 50  0001 C CNN
+F 1 "GND" H 2205 1627 50  0000 C CNN
+F 2 "" H 2200 1800 50  0001 C CNN
+F 3 "" H 2200 1800 50  0001 C CNN
+	1    2200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5E9A13CE
+P 2650 1800
+F 0 "#PWR05" H 2650 1550 50  0001 C CNN
+F 1 "GND" H 2655 1627 50  0000 C CNN
+F 2 "" H 2650 1800 50  0001 C CNN
+F 3 "" H 2650 1800 50  0001 C CNN
+	1    2650 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5E9A1705
+P 2650 1650
+F 0 "C3" H 2765 1696 50  0000 L CNN
+F 1 "1uF" H 2765 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2688 1500 50  0001 C CNN
+F 3 "~" H 2650 1650 50  0001 C CNN
+F 4 "C15849" H 2650 1650 50  0001 C CNN "LCSC"
+	1    2650 1650
+	1    0    0    -1  
+$EndComp
+Text Label 3850 2500 2    50   ~ 0
+XTAL2
+Text Label 3850 2300 2    50   ~ 0
+XTAL1
+$Comp
+L Device:Crystal_GND24 Y1
+U 1 1 5E9A27F1
+P 2700 4300
+F 0 "Y1" H 2894 4346 50  0000 L CNN
+F 1 "16Mhz" H 2900 4450 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 2700 4300 50  0001 C CNN
+F 3 "~" H 2700 4300 50  0001 C CNN
+F 4 "C13738" H 2700 4300 50  0001 C CNN "LCSC"
+	1    2700 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5E9A2DE1
+P 2300 4450
+F 0 "C6" H 2415 4496 50  0000 L CNN
+F 1 "14pF" H 2415 4405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2338 4300 50  0001 C CNN
+F 3 "~" H 2300 4450 50  0001 C CNN
+	1    2300 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5E9A3616
+P 3050 4450
+F 0 "C7" H 3165 4496 50  0000 L CNN
+F 1 "14pF" H 3165 4405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3088 4300 50  0001 C CNN
+F 3 "~" H 3050 4450 50  0001 C CNN
+	1    3050 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4300 2300 4300
+Wire Wire Line
+	2850 4300 3050 4300
+Text Label 2300 4300 2    50   ~ 0
+XTAL2
+Text Label 3050 4300 0    50   ~ 0
+XTAL1
+$Comp
+L power:GND #PWR011
+U 1 1 5E9A5DE1
+P 2700 4700
+F 0 "#PWR011" H 2700 4450 50  0001 C CNN
+F 1 "GND" H 2705 4527 50  0000 C CNN
+F 2 "" H 2700 4700 50  0001 C CNN
+F 3 "" H 2700 4700 50  0001 C CNN
+	1    2700 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5E9A615D
+P 2450 4000
+F 0 "#PWR08" H 2450 3750 50  0001 C CNN
+F 1 "GND" H 2455 3827 50  0000 C CNN
+F 2 "" H 2450 4000 50  0001 C CNN
+F 3 "" H 2450 4000 50  0001 C CNN
+	1    2450 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4000 2700 4000
+Wire Wire Line
+	2700 4000 2700 4100
+Wire Wire Line
+	2300 4600 2300 4700
+Wire Wire Line
+	2300 4700 2700 4700
+Wire Wire Line
+	2700 4700 2700 4500
+Connection ~ 2700 4700
+Wire Wire Line
+	3050 4600 3050 4700
+Wire Wire Line
+	3050 4700 2700 4700
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX1
+U 1 1 5E98BE0C
+P 7200 1900
+F 0 "MX1" H 7233 2123 60  0000 C CNN
+F 1 "MX-NoLED" H 7233 2049 20  0000 C CNN
+F 2 "business-split:Kailh_socket_MX" H 6575 1875 60  0001 C CNN
+F 3 "" H 6575 1875 60  0001 C CNN
+	1    7200 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5E98C95A
+P 7150 2200
+F 0 "D1" V 7196 2121 50  0000 R CNN
+F 1 "D" V 7105 2121 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7150 2200 50  0001 C CNN
+F 3 "~" H 7150 2200 50  0001 C CNN
+F 4 "C81598" H 7150 2200 50  0001 C CNN "LCSC"
+	1    7150 2200
+	0    -1   -1   0   
+$EndComp
+Text Label 6950 2350 2    50   ~ 0
+ROW0
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX2
+U 1 1 5E98EBB3
+P 7500 1900
+F 0 "MX2" H 7533 2123 60  0000 C CNN
+F 1 "MX-NoLED" H 7533 2049 20  0000 C CNN
+F 2 "business-split:Kailh_socket_MX" H 6875 1875 60  0001 C CNN
+F 3 "" H 6875 1875 60  0001 C CNN
+	1    7500 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 5E98EBB9
+P 7450 2200
+F 0 "D2" V 7496 2121 50  0000 R CNN
+F 1 "D" V 7405 2121 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7450 2200 50  0001 C CNN
+F 3 "~" H 7450 2200 50  0001 C CNN
+F 4 "C81598" H 7450 2200 50  0001 C CNN "LCSC"
+	1    7450 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX3
+U 1 1 5E98FB7B
+P 7800 1900
+F 0 "MX3" H 7833 2123 60  0000 C CNN
+F 1 "MX-NoLED" H 7833 2049 20  0000 C CNN
+F 2 "business-split:Kailh_socket_MX" H 7175 1875 60  0001 C CNN
+F 3 "" H 7175 1875 60  0001 C CNN
+	1    7800 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 5E98FB81
+P 7750 2200
+F 0 "D3" V 7796 2121 50  0000 R CNN
+F 1 "D" V 7705 2121 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7750 2200 50  0001 C CNN
+F 3 "~" H 7750 2200 50  0001 C CNN
+F 4 "C81598" H 7750 2200 50  0001 C CNN "LCSC"
+	1    7750 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX4
+U 1 1 5E990CC9
+P 8100 1900
+F 0 "MX4" H 8133 2123 60  0000 C CNN
+F 1 "MX-NoLED" H 8133 2049 20  0000 C CNN
+F 2 "business-split:Kailh_socket_MX" H 7475 1875 60  0001 C CNN
+F 3 "" H 7475 1875 60  0001 C CNN
+	1    8100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 5E990CCF
+P 8050 2200
+F 0 "D4" V 8096 2121 50  0000 R CNN
+F 1 "D" V 8005 2121 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8050 2200 50  0001 C CNN
+F 3 "~" H 8050 2200 50  0001 C CNN
+F 4 "C81598" H 8050 2200 50  0001 C CNN "LCSC"
+	1    8050 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX5
+U 1 1 5E991D1B
+P 8400 1900
+F 0 "MX5" H 8433 2123 60  0000 C CNN
+F 1 "MX-NoLED" H 8433 2049 20  0000 C CNN
+F 2 "business-split:Kailh_socket_MX" H 7775 1875 60  0001 C CNN
+F 3 "" H 7775 1875 60  0001 C CNN
+	1    8400 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D5
+U 1 1 5E991D21
+P 8350 2200
+F 0 "D5" V 8396 2121 50  0000 R CNN
+F 1 "D" V 8305 2121 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8350 2200 50  0001 C CNN
+F 3 "~" H 8350 2200 50  0001 C CNN
+F 4 "C81598" H 8350 2200 50  0001 C CNN "LCSC"
+	1    8350 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6950 2350 7150 2350
+Connection ~ 7150 2350
+Wire Wire Line
+	7150 2350 7450 2350
+Connection ~ 7450 2350
+Wire Wire Line
+	7450 2350 7750 2350
+Connection ~ 7750 2350
+Wire Wire Line
+	7750 2350 8050 2350
+Connection ~ 8050 2350
+Wire Wire Line
+	8050 2350 8350 2350
+Text Label 7350 1550 2    50   ~ 0
+COL00
+Text Label 7650 1550 2    50   ~ 0
+COL01
+Text Label 7950 1550 2    50   ~ 0
+COL02
+Text Label 8250 1550 2    50   ~ 0
+COL03
+Text Label 8550 1550 2    50   ~ 0
+COL04
+Wire Wire Line
+	7350 1550 7350 1850
+Wire Wire Line
+	7650 1550 7650 1850
+Wire Wire Line
+	7950 1550 7950 1850
+Wire Wire Line
+	8250 1550 8250 1850
+Wire Wire Line
+	8550 1550 8550 1850
+Wire Wire Line
+	4050 4600 4450 4600
+Connection ~ 4450 4600
+Wire Wire Line
+	4450 4600 4550 4600
+NoConn ~ 5250 3300
+NoConn ~ 5250 3000
+NoConn ~ 5250 3100
+NoConn ~ 5250 3600
+NoConn ~ 5250 3700
+NoConn ~ 5250 3800
+NoConn ~ 5250 3900
+NoConn ~ 5250 4000
+NoConn ~ 5250 4100
+NoConn ~ 5250 4200
+Text Label 6950 3100 2    50   ~ 0
+ROW1
+Text Label 5250 2100 0    50   ~ 0
+ROW1
+Connection ~ 8550 1850
+Wire Wire Line
+	8550 1850 8550 2600
+Connection ~ 8250 1850
+Connection ~ 7950 1850
+Connection ~ 7650 1850
+Connection ~ 7350 1850
+Wire Wire Line
+	8250 1850 8250 2600
+Wire Wire Line
+	7950 1850 7950 2600
+Wire Wire Line
+	7650 1850 7650 2600
+Wire Wire Line
+	7350 1850 7350 2600
+Wire Wire Line
+	8050 3100 8350 3100
+Connection ~ 8050 3100
+Wire Wire Line
+	7750 3100 8050 3100
+Connection ~ 7750 3100
+Wire Wire Line
+	7450 3100 7750 3100
+Connection ~ 7450 3100
+Wire Wire Line
+	7150 3100 7450 3100
+Connection ~ 7150 3100
+Wire Wire Line
+	6950 3100 7150 3100
+$Comp
+L Device:D D10
+U 1 1 5E99CF26
+P 8350 2950
+F 0 "D10" V 8396 2871 50  0000 R CNN
+F 1 "D" V 8305 2871 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8350 2950 50  0001 C CNN
+F 3 "~" H 8350 2950 50  0001 C CNN
+F 4 "C81598" H 8350 2950 50  0001 C CNN "LCSC"
+	1    8350 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX10
+U 1 1 5E99CF20
+P 8400 2650
+F 0 "MX10" H 8433 2873 60  0000 C CNN
+F 1 "MX-NoLED" H 8433 2799 20  0000 C CNN
+F 2 "business-split:Kailh_socket_MX" H 7775 2625 60  0001 C CNN
+F 3 "" H 7775 2625 60  0001 C CNN
+	1    8400 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D9
+U 1 1 5E99CF1A
+P 8050 2950
+F 0 "D9" V 8096 2871 50  0000 R CNN
+F 1 "D" V 8005 2871 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8050 2950 50  0001 C CNN
+F 3 "~" H 8050 2950 50  0001 C CNN
+F 4 "C81598" H 8050 2950 50  0001 C CNN "LCSC"
+	1    8050 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX9
+U 1 1 5E99CF14
+P 8100 2650
+F 0 "MX9" H 8133 2873 60  0000 C CNN
+F 1 "MX-NoLED" H 8133 2799 20  0000 C CNN
+F 2 "business-split:Kailh_socket_MX" H 7475 2625 60  0001 C CNN
+F 3 "" H 7475 2625 60  0001 C CNN
+	1    8100 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D8
+U 1 1 5E99CF0E
+P 7750 2950
+F 0 "D8" V 7796 2871 50  0000 R CNN
+F 1 "D" V 7705 2871 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7750 2950 50  0001 C CNN
+F 3 "~" H 7750 2950 50  0001 C CNN
+F 4 "C81598" H 7750 2950 50  0001 C CNN "LCSC"
+	1    7750 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX8
+U 1 1 5E99CF08
+P 7800 2650
+F 0 "MX8" H 7833 2873 60  0000 C CNN
+F 1 "MX-NoLED" H 7833 2799 20  0000 C CNN
+F 2 "business-split:Kailh_socket_MX" H 7175 2625 60  0001 C CNN
+F 3 "" H 7175 2625 60  0001 C CNN
+	1    7800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D7
+U 1 1 5E99CF02
+P 7450 2950
+F 0 "D7" V 7496 2871 50  0000 R CNN
+F 1 "D" V 7405 2871 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7450 2950 50  0001 C CNN
+F 3 "~" H 7450 2950 50  0001 C CNN
+F 4 "C81598" H 7450 2950 50  0001 C CNN "LCSC"
+	1    7450 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX7
+U 1 1 5E99CEFC
+P 7500 2650
+F 0 "MX7" H 7533 2873 60  0000 C CNN
+F 1 "MX-NoLED" H 7533 2799 20  0000 C CNN
+F 2 "business-split:Kailh_socket_MX" H 6875 2625 60  0001 C CNN
+F 3 "" H 6875 2625 60  0001 C CNN
+	1    7500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D6
+U 1 1 5E99CEF5
+P 7150 2950
+F 0 "D6" V 7196 2871 50  0000 R CNN
+F 1 "D" V 7105 2871 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7150 2950 50  0001 C CNN
+F 3 "~" H 7150 2950 50  0001 C CNN
+F 4 "C81598" H 7150 2950 50  0001 C CNN "LCSC"
+	1    7150 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX6
+U 1 1 5E99CEEF
+P 7200 2650
+F 0 "MX6" H 7233 2873 60  0000 C CNN
+F 1 "MX-NoLED" H 7233 2799 20  0000 C CNN
+F 2 "business-split:Kailh_socket_MX" H 6575 2625 60  0001 C CNN
+F 3 "" H 6575 2625 60  0001 C CNN
+	1    7200 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Female J2
+U 1 1 5EB078A1
+P 7000 3750
+F 0 "J2" H 6850 4200 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 6500 4100 50  0000 L CNN
+F 2 "Connector_PinSocket_1.00mm:PinSocket_1x06_P1.00mm_Vertical" H 7000 3750 50  0001 C CNN
+F 3 "~" H 7000 3750 50  0001 C CNN
+	1    7000 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Female J3
+U 1 1 5EB0962F
+P 7650 3850
+F 0 "J3" H 7500 3300 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 7150 3400 50  0000 L CNN
+F 2 "Connector_PinSocket_1.00mm:PinSocket_1x06_P1.00mm_Vertical" H 7650 3850 50  0001 C CNN
+F 3 "~" H 7650 3850 50  0001 C CNN
+	1    7650 3850
+	-1   0    0    1   
+$EndComp
+Text Label 6800 3550 2    50   ~ 0
+ROW0
+Text Label 6800 3650 2    50   ~ 0
+COL00
+Text Label 6800 3750 2    50   ~ 0
+COL01
+Text Label 6800 3850 2    50   ~ 0
+COL02
+Text Label 6800 3950 2    50   ~ 0
+COL03
+Text Label 6800 4050 2    50   ~ 0
+COL04
+Text Label 7850 4050 0    50   ~ 0
+ROW0
+Text Label 7850 3850 0    50   ~ 0
+COL01
+Text Label 7850 3750 0    50   ~ 0
+COL02
+Text Label 7850 3650 0    50   ~ 0
+COL03
+Text Label 7850 3550 0    50   ~ 0
+COL04
+Text Label 7850 3950 0    50   ~ 0
+COL00
+NoConn ~ 5250 3200
+NoConn ~ 5250 2700
+NoConn ~ 5250 2600
+NoConn ~ 950  4350
+$EndSCHEMATC

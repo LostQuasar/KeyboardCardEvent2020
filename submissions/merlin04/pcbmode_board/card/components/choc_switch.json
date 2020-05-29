@@ -1,0 +1,136 @@
+{
+    "info": {
+        "description": "Choc switch",
+        "manufacturer": "Kailh",
+        "notes": ""
+    },
+    "pins": {
+        "1": {
+            "layout": {
+                "pad": "pin",
+                "location": [
+                    0,
+                    5.9
+                ]
+            }
+        },
+        "2": {
+            "layout": {
+                "pad": "pin",
+                "location": [
+                    5.0,
+                    3.80
+                ]
+            }
+        },
+        "3": {
+            "layout": {
+                "pad": "main-sw-mount",
+                "location": [
+                    0,
+                    0
+                ]
+            }
+        },
+        "4": {
+            "layout": {
+                "pad": "side-sw-mount",
+                "location": [
+                    5.5,
+                    0
+                ]
+            }
+        },
+        "5": {
+            "layout": {
+                "pad": "side-sw-mount",
+                "location": [
+                    -5.5,
+                    0
+                ]
+            }
+        },
+        "6": {
+            "layout": {
+                "pad": "clickbar-hole",
+                "location": [
+                    -5.22,
+                    -4.20
+                ]
+            }
+        }
+    },
+    "layout": {
+        "silkscreen": {
+            "shapes": [
+                {
+                    "type": "rect",
+                    "style": "stroke",
+                    "stroke-width": 0.35,
+                    "width": 18.5,
+                    "height": 17.5,
+                    "location": [
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        "assembly": {
+            "shapes": [
+                {
+                    "type": "rect",
+                    "width": 14,
+                    "height": 14,
+                    "location": [
+                        0,
+                        0
+                    ]
+                }
+            ]
+        }
+    },
+    "pads": {
+        "pin": {
+            "shapes": [
+                {
+                    "layers": [
+                        "top",
+                        "bottom"
+                    ],
+                    "type": "circle",
+                    "diameter": 2
+                }
+            ],
+            "drills": [
+                {
+                    "diameter": 1.2
+                }
+            ]
+        },
+        "main-sw-mount": {
+            "shapes": [],
+            "drills": [
+                {
+                    "diameter": 3.4
+                }
+            ]
+        },
+        "side-sw-mount": {
+            "shapes": [],
+            "drills": [
+                {
+                    "diameter": 1.9
+                }
+            ]
+        },
+        "clickbar-hole": {
+            "shapes": [],
+            "drills": [
+                {
+                    "diameter": 1.2
+                }
+            ]
+        }
+    }
+}

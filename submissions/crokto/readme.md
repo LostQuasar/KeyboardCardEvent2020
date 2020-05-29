@@ -11,3 +11,5 @@ Created a (mostly fictional) website to go with the business card.
 ![Top view](https://i.imgur.com/xttX4zN.png)
 
 ![Bottom view](https://i.imgur.com/U9DsIVy.png)
+
+JLC gerber & PCBA files are included, all that's needed is to solder on an HRO-TYPE-C-31-M-13 connector - can use this video as reference on soldering this type of connector https://www.youtube.com/watch?v=3IOdTOevj2k

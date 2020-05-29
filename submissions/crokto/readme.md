@@ -8,6 +8,6 @@ Meant to be operated while held in hand, serving as something in-between a phone
 
 Created a (mostly fictional) website to go with the business card.
 
-![Top view](https://imgur.com/NWcrcBZ)
+![Top view](https://i.imgur.com/xttX4zN.png)
 
-![Bottom view](https://imgur.com/AROHxKC)
+![Bottom view](https://i.imgur.com/U9DsIVy.png)

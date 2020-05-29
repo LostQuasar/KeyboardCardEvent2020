@@ -212,4 +212,48 @@ F 3 "~" H 2650 6800 50  0001 C CNN
 	1    2650 6800
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5ED0B0DE
+P 3300 7000
+F 0 "H3" H 3400 7046 50  0000 L CNN
+F 1 "jlc" H 3400 6955 50  0000 L CNN
+F 2 "crokto:jlc" H 3300 7000 50  0001 C CNN
+F 3 "~" H 3300 7000 50  0001 C CNN
+	1    3300 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5ED1090A
+P 3750 6800
+F 0 "H4" H 3850 6846 50  0000 L CNN
+F 1 "jlc" H 3850 6755 50  0000 L CNN
+F 2 "crokto:JLCPCBA" H 3750 6800 50  0001 C CNN
+F 3 "~" H 3750 6800 50  0001 C CNN
+	1    3750 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 5ED10A41
+P 3950 7100
+F 0 "H6" H 4050 7146 50  0000 L CNN
+F 1 "jlc" H 4050 7055 50  0000 L CNN
+F 2 "crokto:JLCPCBA" H 3950 7100 50  0001 C CNN
+F 3 "~" H 3950 7100 50  0001 C CNN
+	1    3950 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 5ED10B37
+P 4200 6950
+F 0 "H5" H 4300 6996 50  0000 L CNN
+F 1 "jlc" H 4300 6905 50  0000 L CNN
+F 2 "crokto:JLCPCBA" H 4200 6950 50  0001 C CNN
+F 3 "~" H 4200 6950 50  0001 C CNN
+	1    4200 6950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

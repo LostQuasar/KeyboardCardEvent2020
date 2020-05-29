@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name crokto)(type Legacy)(uri ${KIPRJMOD}/footprints/crokto.pretty/crokto.lib)(options "")(descr ""))
+  (lib (name Type-C)(type Legacy)(uri ${KIPRJMOD}/footprints/Type-C.pretty/Type-C.lib)(options "")(descr ""))
+)

@@ -1,0 +1,11 @@
+(module jlc (layer F.Cu) (tedit 5E904474)
+  (fp_text reference REF** (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value jlc (at 0 0) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text user JLCJLCJLCJLC (at 0 0) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.2)))
+  )
+)

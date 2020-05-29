@@ -1,0 +1,8 @@
+(fp_lib_table
+  (lib (name crokto)(type KiCad)(uri ${KIPRJMOD}/footprints/crokto.pretty)(options "")(descr ""))
+  (lib (name switches-nocopper)(type KiCad)(uri ${KIPRJMOD}/footprints/switches-nocopper.pretty)(options "")(descr ""))
+  (lib (name Type-C)(type KiCad)(uri ${KIPRJMOD}/footprints/Type-C.pretty)(options "")(descr ""))
+  (lib (name crokto2)(type KiCad)(uri ${KIPRJMOD}/footprints/smd-keys.pretty/crokto2.pretty)(options "")(descr ""))
+  (lib (name smd-keys)(type KiCad)(uri ${KIPRJMOD}/footprints/smd-keys.pretty)(options "")(descr ""))
+  (lib (name logo)(type KiCad)(uri ${KIPRJMOD}/footprints/logo.pretty)(options "")(descr ""))
+)

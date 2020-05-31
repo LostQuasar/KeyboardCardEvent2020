@@ -1,4 +1,4 @@
-# Gtrx0's Business card
+Business card made by Gtrx
 
 # Concept
 A modern, sleek and usable business card with an NFC tag, QR code and the ability to open a website/copy text to clipboard once plugged into a computer.
